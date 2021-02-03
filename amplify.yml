@@ -7,7 +7,7 @@ backend:
         - pwd
         - ls
         - '# Execute Amplify CLI with the helper script'
-        - amplify push --y
+        - amplify push --simple
 frontend:
   phases:
     preBuild:
@@ -15,12 +15,13 @@ frontend:
         - echo "frontend prebuild..........."
         - pwd
         - ls
+        - npm install
     build:
       commands:
         - echo "frontend build..........."
         - pwd
         - ls
-        - npm start
+        - npm run build
   artifacts:
     baseDirectory: /
     files:
