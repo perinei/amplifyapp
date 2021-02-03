@@ -7,7 +7,7 @@ backend:
         - pwd
         - ls
         - '# Execute Amplify CLI with the helper script'
-        - amplify push --simple
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:
