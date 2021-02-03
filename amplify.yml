@@ -23,7 +23,7 @@ frontend:
         - ls
         - npm run build
   artifacts:
-    baseDirectory: /
+    baseDirectory: build
     files:
       - '**/*'
   cache:
