@@ -3,16 +3,24 @@ backend:
   phases:
     build:
       commands:
+        - echo "backand build........."
         - pwd
+        - ls
         - '# Execute Amplify CLI with the helper script'
         - amplifyPush --simple
 frontend:
   phases:
     preBuild:
       commands:
+        - echo "frontend prebuild..........."
+        - pwd
+        - ls
         - yarn install
     build:
       commands:
+        - echo "frontend build..........."
+        - pwd
+        - ls
         - yarn run build
   artifacts:
     baseDirectory: build
