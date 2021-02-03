@@ -14,13 +14,13 @@ frontend:
         - echo "frontend prebuild..........."
         - pwd
         - ls
-        - yarn install
+        - npm install
     build:
       commands:
         - echo "frontend build..........."
         - pwd
         - ls
-        - yarn run build
+        - npm start
   artifacts:
     baseDirectory: /
     files:
